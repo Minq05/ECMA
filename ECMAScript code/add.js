@@ -4,6 +4,7 @@ function handleSubmit(event) {
     event.preventDefault();
     const productName = document.getElementById("name").value;
     const productPrice = document.getElementById("price").value;
+    const productSelect = document.getElementById("select").value;
     console.log("productName", productName);
 
     if(productName == "" || productPrice == ""){
@@ -14,6 +15,7 @@ function handleSubmit(event) {
             axios.post("http://localhost:3000/products", {
                 name: productName,
                 price: productPrice,
+                category: productSelect
               });
               location.href = "html.html";
               alert("Thanh cong !")
