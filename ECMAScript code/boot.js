@@ -45,7 +45,6 @@ async function deleteData(id) {
   }
 }
 
-
 // async function showProductList() {
 //   const res = await axios.get("http://localhost:3000/products2");
 //   const products = res.data;
@@ -77,4 +76,3 @@ async function deleteData(id) {
 //     }
 //   }
 // }
-

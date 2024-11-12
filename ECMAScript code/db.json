@@ -28,5 +28,25 @@
       "name": "Laptop Asus",
       "price": 1111
     }
+  ],
+  "phones": [
+    {
+      "name": "Iphone 12 promax",
+      "price": "16000000",
+      "GB": "64GB",
+      "id": 1
+    },
+    {
+      "name": "Iphone 13 promax",
+      "price": "18000000",
+      "GB": "32GB",
+      "id": 2
+    },
+    {
+      "name": "Iphone 14 promax",
+      "price": "20000000",
+      "GB": "128GB",
+      "id": 3
+    }
   ]
 }
