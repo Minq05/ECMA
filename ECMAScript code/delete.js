@@ -10,7 +10,7 @@ function getAllProduct(product) {
                   </tr>`;
 }
 async function fetchProduct() {
-  const res = await fetch("http://localhost:3000/products2");
+  const res = await fetch("http://localhost:3000/products");
   const datas = await res.json();
   document.getElementById("list").innerHTML = `
     <table class="table">

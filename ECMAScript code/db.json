@@ -9,6 +9,11 @@
       "id": 2,
       "name": "Laptop Asus",
       "price": 1111
+    },
+    {
+      "name": "Macbook",
+      "price": "1123",
+      "id": 3
     }
   ],
   "products2": [

@@ -12,7 +12,7 @@ function proAll(product) {
 }
 
 async function getProductAsyneFetch() {
-  const res = await fetch("http://localhost:3000/products2");
+  const res = await fetch("http://localhost:3000/products");
   const data = await res.json();
   document.getElementById("list").innerHTML = `
   <table class="table">
