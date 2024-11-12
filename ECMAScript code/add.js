@@ -6,15 +6,25 @@ function handleSubmit(event) {
     const productPrice = document.getElementById("price").value;
     console.log("productName", productName);
 
-     try{
-        axios.post("http://localhost:3000/products", {
-            name: productName,
-            price: productPrice,
-          });
-          location.href = "html.html";
-          alert("Thanh cong !")
-     }catch(error){
-        console.error(error);   
-     }
+    if(productName == "" || productPrice == ""){
+        alert("Name or price blank !");
+        location.href = "add.html";
+      }else{
+        try{
+            axios.post("http://localhost:3000/products", {
+                name: productName,
+                price: productPrice,
+              });
+              location.href = "html.html";
+              alert("Thanh cong !")
+         }catch(error){
+            console.error(error);   
+         }
+      }
+     
   }
+
+
+
+  
 
