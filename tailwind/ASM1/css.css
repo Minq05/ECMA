@@ -1,0 +1,69 @@
+/* main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: white;
+    }
+.banner {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+} */
+#big{
+    width: 315px;
+    overflow: hidden;
+    position: relative;
+    background-color: lightgrey;
+}
+#mini{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: -9px;
+    transition: 1s ease;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+#mini2 {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: -5px;
+    transition: 1s ease;
+    transition: opacity 0 ease, visibility 0 ease;
+    opacity: 0;
+}
+#mini:hover{
+    top: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5);
+    visibility: hidden;
+    opacity: 0;
+}
+
+#mini2:hover{
+    top: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+    visibility: visible;
+}
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; /* Màu nền của thanh nav */
+    color: white; /* Màu chữ */
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000; /* Đảm bảo nav ở trên các phần tử khác */
+}

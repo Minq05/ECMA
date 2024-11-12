@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Furniro</title>
+        <link rel="short-cut icon"
+            href="https://th.bing.com/th/id/OIP.wbh6QMZaMUDSDm2lWcmABAHaGB?rs=1&pid=ImgDetMain">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="./css/tailwind.css">
+        <link rel="stylesheet" href="./build/tailwind.css">
+        <link rel="stylesheet" href="css.css">
+
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header{
+            justify-content: space-between;
+            align-items: center;
+        }
+        #layout{
+            width: 1440px;
+            margin: auto;
+        }
+    </style>
+    </head>
+    <body>
+        <div id="layout" class="pb-4">
+            <header class="flex p-2 bg-inherit shadow-black text-black"
+                id="navbar">
+                <div class="flex items-center">
+                    <img class="h-10 cursor-pointer" src="./img/logo.png"
+                        alt="Furniro Logo">
+                </div>
+                <nav>
+                    <ul class="list-none flex m-0 p-0">
+                        <li class="mx-6"><a class=" hover:text-red-300 text-2xl"
+                                href="#">Home</a></li>
+                        <li class="mx-6"><a class=" hover:text-red-300 text-2xl"
+                                href="./Detail.html">Shop</a></li>
+                        <li class="mx-6"><a class=" hover:text-red-300 text-2xl"
+                                href="#">About</a></li>
+                        <li class="mx-6"><a class=" hover:text-red-300 text-2xl"
+                                href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="mr-2">
+                    <a href="#" class="mx-3 hover:text-red-300"><i
+                            class="fas fa-user"></i></a>
+                    <a href="#" class="mx-3 hover:text-red-300"><i
+                            class="fas fa-search"></i></a>
+                    <a href="#" class="mx-3 hover:text-red-300"><i
+                            class="fas fa-heart"></i></a>
+                    <a href="#" class="mx-3 hover:text-red-300"><i
+                            class="fas fa-shopping-cart"></i></a>
+                </div>
+            </header>
+            <main class="mt-mt60">
+                <div>
+                    <img
+                        src="./img/banner.png"
+                        alt width="100%" class="w-full cursor-pointer">
+                </div>
+                <div class="flex content-center">
+                    <h1 class="p-12 text-6xl font-bold cursor-pointer"><a
+                            class=" hover:text-red-300" href="#">New</a></h1>
+                </div>
+                <div class="flex justify-center pl-12 pr-12">
+                    <div
+                        style="border: 1px solid black; width: 1400px; height: 0;float: left;"></div>
+                </div>
+                <div class="grid grid-cols-4 p-12">
+                    <div class="mx-3" id="big">
+                        <div class>
+                            <img
+                                src="https://s3-alpha-sig.figma.com/img/4491/a0ea/43eebd52ea72d60650f31030ec4bf7e6?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=e2tJ1346Rszcq6OCMrbX2i1eqjweMa1Y2y3x3CdL5Af8hrOrofIH0TmZV2ua0h4~nnJXjnsqebpI7ckTq1BZpBtoXmqG9vno0GHOZHW6uuNPe01UY97gRUniFdL5CFuJVUMNKeZch0TLP9ph6uYgHIYZHvwcu6HTMMZq6UDpyCli5ZsQTHHDqLdVFu8vapUMTNUEEDs10i0QCxN15yHwMlUwCrQl9yn5LGzriuY3lczKj3bQGloeQ2LsWt~G4mmsqlO-slCA6HDY0auA1eU1IzKNww67Ng-i4tU867tkcnfBIAgKiMOS3azTqwNp4DeKtnEu-75i0T2IpVPpWktBxQ__"
+                                class="w-full h-96" alt>
+
+                        </div>
+                        <div class="bg-gray-200 pb-2 cursor-pointer" id="mini">
+                            <h1
+                                class="block pl-5 mb-2 pt-2 font-bold text-4xl cursor-pointer"><a
+                                    class=" hover:text-red-300"
+                                    href="#">Syltherine</a></h1>
+                            <span
+                                class="block ml-5 mb-2 mr-36 text-gray-500 text-lg cursor-pointer">Stylish
+                                cafe chair</span>
+                            <del
+                                class="ml-5 text-gray-400 cursor-pointer">3.500.000đ</del>
+
+                        </div>
+                        <div class="grid justify-center" id="mini2">
+                            <button
+                                class="d-flex flex-row btn btn-danger h-10 justify-center mt-24 mb-mm">Add
+                                to cart</button>
+                            <div class>
+                                <a href="#"
+                                    class="cursor-pointer hover:text-red-300"><i
+                                        class="fas fa-share"></i> Share</a>
+                                <a href="#"
+                                    class="cursor-pointer hover:text-red-300"><i
+                                        class="fas fa-heart"></i> Like</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" mx-3" id="big">
+                        <div>
+
+                            <img
+                                src="https://s3-alpha-sig.figma.com/img/3ed3/53ed/bdb0310fb379a6b1828809d2c0652533?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MrKnB6sfqe1O4cM-xIEckBriZkclS2bMTi10H-Dk~Flw5-wwr1wHJvE9Xv2soyyIWMCwwiKIWRxrarMeC-8NUD4OInGPCd64kg~UYOOdmB-PrF9CfbuUWh~4-RRqx-UH0fOEZaBvAgYYNk7-QToLBmSRSKNZkJPEE2mF08ho01WZ4yP~2cG42XnFoCnSvrIbfFAeafTF~qiCvSVE7a8QhRGEey9QiTmzf-Zhnza5yBz2lcbZTvmGBzrSd5dhRRojC~ePiT0iLg3H0bPlf0dtP0Nwep2tzgpgMxfb4CympNtb2vgea5KFkVbhXR6HSk0UVuhJevgGBOrsJ5tWJPkGig__"
+                                class="w-full h-96" alt>
+
+                        </div>
+
+                        <div class="w-full bg-gray-200 pb-2" id="mini">
+                            <h1
+                                class="pl-5 pt-2 mb-2 font-bold text-4xl cursor-pointer"><a
+                                    class=" hover:text-red-300"
+                                    href="#">Leviosa</a></h1>
+
+                            <span
+                                class="block ml-5 mb-2 mr-36 text-gray-500 text-lg cursor-pointer">Stylish
+                                cafe chair</span>
+                            <del
+                                class=" ml-5 text-gray-400 cursor-pointer">2.500.000đ</del>
+
+                        </div>
+                        <div class="grid justify-center" id="mini2">
+                            <button
+                                class="d-flex flex-row btn btn-danger h-10 justify-center mt-24 mb-mm">Add
+                                to cart</button>
+                            <div class>
+                                <a href="#"
+                                    class="cursor-pointer hover:text-red-300"><i
+                                        class="fas fa-share"></i> Share</a>
+                                <a href="#"
+                                    class="cursor-pointer hover:text-red-300"><i
+                                        class="fas fa-heart"></i> Like</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" mx-3" id="big">
+                        <div>
+                            <img
+                                src="https://s3-alpha-sig.figma.com/img/2084/99f3/7c62fb49f7d4a1a6a5dc5959b40150ed?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H1s1d0xiuGZ4C5lkJ0B4ZmHXY8AkHPhFnYrpf5k22389NVcU3bCDDy8KcaROOcPUSdVradoZ9Sae8tO8BD3tqFHrz-tklW3pt0DhCHBkJe-rQAHnSOSR17lUd4WB~zBU1wQzTNzBoQLAx~jJefl6d4TL2Uitw63d2PUtT-JzrXJQm08nMgwEQwBTzKD5IeQYm6vitd6T59zuJ8QBBSxu6L7rncojzYfh-8ClWXYtBUN2wcuAxyRuvur0xbkyhs4u4gL0S7aQH1FU2hC4xmveHWozrSHg5XvKhw91iCGiDMzYALwcgsJbJNMx66oXq2G-62Flh3SkAmemNFxz446P3g__"
+                                class="w-full h-96" alt>
+                        </div>
+
+                        <div class="bg-gray-200 pb-2" id="mini">
+                            <h1
+                                class="clear-right mb-2 pl-5 pt-2 font-bold text-4xl cursor-pointer"><a
+                                    class=" hover:text-red-300"
+                                    href="#">Lolito</a></h1>
+                            <h2
+                                class="block float-left ml-5 mb-2 mr-36 text-gray-500 text-lg cursor-pointer">Luxury
+                                big sofa</h2>
+                            <h3
+                                class="ml-5 text-gray-400 cursor-pointer">14.000.000đ</h3>
+
+                        </div>
+                        <div class="grid justify-center" id="mini2">
+                            <button
+                                class="d-flex flex-row btn btn-danger h-10 justify-center mt-24 mb-mm">Add
+                                to cart</button>
+                            <div class>
+                                <a href="#"
+                                    class="cursor-pointer hover:text-red-300"><i
+                                        class="fas fa-share"></i> Share</a>
+                                <a href="#"
+                                    class="cursor-pointer hover:text-red-300"><i
+                                        class="fas fa-heart"></i> Like</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class=" mx-3" id="big">
+                        <div>
+
+                            <img
+                                src="https://s3-alpha-sig.figma.com/img/1f73/e563/4a5dbc0c29efbae1beca6ab40dd9b598?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KIyOWfbkbJJVzTStlA1zOG-7M3KJsPaYpQQ6JiIzBiU1dke2-NUfQk0K7ovV6vY60~mJoIWkaMW1sfImgKBgG8wcXLa2jVQPoBZNgNYtLfPAeW0n7juEQDtKXJQPJ1LkmywVBRuzy0YVgq0aMDkVzTLrsTL3-QRTt92Db~2NMm72H8pJ389hz~aovJWuBfGdLA9N2WKw9QERDtYGc6gyqo4di0V475XoHDGsZHfa71ieA4I9Qeb0WwxkzI~wc5PSPbjoHz~XWRUp8AhBTVkXGQxOr95FfxFfUYq7OJwxVatSxgNtKJCK~WV6eCeGPvuQVpKe88B-tfswdIzpgp6Mmg__"
+                                class="w-full h-96" alt>
+
+                        </div>
+
+                        <div class="bg-gray-200 pb-2" id="mini">
+                            <h1 class="pl-5 pt-2 mb-2 font-bold text-4xl "><a
+                                    class=" hover:text-red-300"
+                                    href="#">Respira</a></h1>
+                            <span
+                                class="block ml-5 mb-2 mr-36 text-gray-500 text-lg cursor-pointer">Outdoor bar table</span>
+                            <del
+                                class="ml-5 text-gray-400 cursor-pointer">5.000.000đ</del>
+
+                        </div>
+                        <div class="grid justify-center" id="mini2">
+                            <button
+                                class="d-flex flex-row btn btn-danger h-10 justify-center mt-24 mb-mm">Add
+                                to cart</button>
+                            <div class>
+                                <a href="#"
+                                    class="cursor-pointer hover:text-red-300"><i
+                                        class="fas fa-share"></i> Share</a>
+                                <a href="#"
+                                    class="cursor-pointer hover:text-red-300"><i
+                                        class="fas fa-heart"></i> Like</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="flex content-center">
+                    <h1 class="p-12 text-6xl font-bold cursor-pointer"><a
+                            class=" hover:text-red-300" href="#">Shop</a></h1>
+                </div>
+                <div class="flex justify-center pl-12 pr-12">
+                    <div
+                        style="border: 1px solid black; width: 1400px; height: 0;float: left;"></div>
+                </div>
+                <div class="p-12">
+                    <div class="flex flex-wrap justify-center">
+                        <div class="h-h605 w-w605 mx-4 my-4">
+                            <img
+                                src="https://s3-alpha-sig.figma.com/img/7528/c088/104274c88e1fb7455ffd94c65dcb012f?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mUNkzskNLLEv4qfN3u4IyPci9Y-6g6SHqv6Ux4rsXtKsxFyOMNgVp-B00th7k56Ig3wG1QY2MO-utjRxM9D02IXsyFXjPKqTVB-qge9sPNMkfWxqJ37CrVygoF4Myhf4WwnsJAvvu9OAxAi~JdOp5cieCvGVtyyrt8Ieu8FZW6ZQ9GLqXDduqIcxUaezGquFG43IdVyLi9-IFbGggYo~9EWjxMywX48Emy4BJN68suvIX1v1oCH9H-f~uu7-jUXpAzKUxSXEa3Fhy8gZwAedrs1LQUL1RxtKlqkJwCDxK9TqvoWLL4lKBGi9l9Jzyw11xqYAbZAagp6AOVfb9S60CA__"
+                                alt class="w-full h-full">
+                        </div>
+                        <div class="h-h605 w-w605 mx-4 my-4">
+                            <img
+                                src="https://s3-alpha-sig.figma.com/img/0a1e/c7b8/b8d5802698da4ececd703b4dd570245b?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IQecA5ob11hcMK5ndJ9XBpDV~vxzYeV9IoyNiUWGgIjFZHdTgiIMadWVOAaGrrCmRwDUDWNUynJouzSbV0vgua6qBrQ-IZGe4Jw5FaZt16Ja7EGgngHgf4Qh9aeEuHiZLHdGpTEYKu7LFjyxnMHkw93iQJt8FvjBOkvFjRQ4gqGMuGDUCqHYE3fPBvUVqTr4duTWuy9ovb4HoqkMig7iHTRZn9T2DxE6ugZgwxCbZbB1oCwkIR~kz9hq9CpMfmN6SAgz6RJ1y2tM8R1pDl7KGs~7nNPfBa3BhH1nD7pfLUFzoJLToLQuz6xA9XLKRrynpngM9a5Cdyv9ub2JHXsJiQ__"
+                                class="w-full h-full">
+                        </div>
+                        <div class="h-h605 w-w605 mx-4 my-4">
+                            <img
+                                src="https://s3-alpha-sig.figma.com/img/ffb5/2565/ffc80117d370a199a47ec758114e7efc?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LYsWxAHg-Qm~DN~br1iiUn8YPK-XaDmQWBUZ6rjqzXGiMZOf4lN5v9oUDZzm5aK2q~wd29-C2c9wdCGV4P6N10gB-P2YepJaVgep~taxDmsNwuXBRbBM6MrzL2OTfVZ35ToW9i~hWItLSWhse~YxruAmV-cilrMcs9Xqs3ri-4m5n6xoYNYkm9Y-0XNyWp8U3q4D2uZirWp3wZiIEuJ3~JkdpNJ3NsZfuuG01gO2DniMPOdH79y5i5zp2wv4ZCKkdMeAQHc10N1Mb6cY8XWcA9l64AATX3hz8Bvgo6qYzjLx9qVQnblXZgR-70APry97Zci2WVimnrY0Vb~w5sr9Yg__"
+                                class="w-full h-full">
+                        </div>
+                        <div class="h-h605 w-w605 mx-4 my-4">
+                            <img
+                                src="https://s3-alpha-sig.figma.com/img/9b1f/5afb/f6ad4c2183251c889b322df119ef34c8?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CwBnouWmE3xc-2ENykb7bBVhAoTSeE0qAqzw7kACzyh~J-y7QSnjWrlpTN2uXpP6nXYYLNRl3il437JyAlN~~hK9~XaS-yzQrntDQK0T0qtVHgs-SvLgF1y0f1~Z37wdQRU4lUrQ491q-Afn616NkkVOdDEsLAq9EQjQMqz~Y0utZx4Q-Blae4y4bGkEhw2-Nm6eVYNPGpeeAVWINVAirXE02TL56F1TDCMaZb69X0U6cdqnstBmqV87RcLUt80WF2B6i~F-0qT-OimNsWcwsU0O2r2Y78KkgtsnupSHDORG6Unevn5zgl-razs2cnucQQ2EAjTR9v0TajQDV~k9Sg__"
+                                class="w-full h-full">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex content-center">
+                    <h1 class="p-12 text-6xl font-bold cursor-pointer"><a
+                            class=" hover:text-red-300" href="#">Blog</a></h1>
+                </div>
+                <div class="flex justify-center pl-12 pr-12">
+                    <div
+                        style="border: 1px solid black; width: 1400px; height: 0;float: left;"></div>
+                </div>
+                <div class="p-12">
+                    <div class="flex mb-4">
+                        <div class="w-w605 h-h250 float-left mr-8">
+                            <img
+                                src="https://s3-alpha-sig.figma.com/img/fdd9/64bc/80337241ae54cb06a47ebf73f4d5e4d4?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=krPY-q13w8jprJEjCSXOfv6WXn05PXmPE9lJ0-D2QQEMNsPRRDxP4YXjbiF~fMYSVJ9YT-VZlNNQMKfNnBI13CBFdJYDInN7biJk4etHM97ydqajefWgfntKNi1v1V5iesMkf8NrLhGWxYc9qVhBKH0IiUccU3q2ll8X~YDr86lXBjQ0Ot~ROkFgzsIj0xaZmqViaPwokrx9fYFVcis9i8u2ujaE~1Hp~JmeBtvYvvZAIRGjrWxAmrQhjOaTt7vPzG0aRVaMTZaKpuTLivuMelmYcEUdBX0EyMjc10kcTKjnr-sZ7iblFPRn9jvEP0GRcgXr1fq6esa6gJakqQ873g__"
+                                alt="img"
+                                class="w-full h-full">
+                        </div>
+                        <div class="relative w-w640 h-h250 mr-16">
+                            <div>
+                                <h1
+                                    class="font-bold text-2xl hover:text-red-300 cursor-pointer">THE
+                                    ULTIMATE SOFA
+                                    BUYING GUIDE</h1>
+                            </div>
+                            <div>
+                                <div class="absolute bottom-2 right-1"><i
+                                        class="fa-solid fa-arrow-right text-2xl hover:text-red-300 cursor-pointer"></i></div>
+                                <div class="w-full float-left absolute bottom-0"
+                                    style="border: 1px solid black; height: 0;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mb-4">
+                        <div class="w-w605 h-h250 float-left mr-8">
+                            <img
+                                src="https://s3-alpha-sig.figma.com/img/a224/6239/95432abad09eb8de37f4a236cf0f1e7c?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Is~MkWgA94h5T6BLrcnj9ipnuApv08x192KBeDnIv6AKtEsh5a7BWKy~V72HH7zaMCPgdKxE2QQhEbrwesGkaHYJ5PcbRaG6T2Ulx6aIhOAgnn4QwYTs6ca3IU~KLNfCmZR2jzgL2Nnu~1OgJdCLz-8i1XoVnVwCBAAm27CqrNv~AeWA2NFgMdGJQAYklQYra9RvnGAxKtZI537lwLQnZZG4b6o08x835kaMprrhd5lnC~xKg-TOwdR~GdOPNF8VAEr3JtZGacJz4pY4ZbLORv7t5SpIqbTLupkhsRZdOaLRejBKN6ZcyW3CKZz~ZU8JkL39qgiSaAKTpF3Gik08hw__"
+                                alt="img"
+                                class="w-full h-full">
+                        </div>
+                        <div class="relative w-w640 h-h250 mr-16 ">
+                            <div>
+                                <h1
+                                    class="font-bold text-2xl mb-2 hover:text-red-300 cursor-pointer">A
+                                    BEDROOM
+                                    MUST
+                                    HAVE SOME THING LIKE THIS</h1>
+                                <h2>Your level of comfort when geting into and
+                                    out of bed can be greatly influenced by the
+                                    bed frame you choose. It may significantly
+                                    affect how want your bedroom to feet and
+                                    look</h2>
+                            </div>
+                            <div>
+                                <h1
+                                    class="absolute font-bold bottom-3 right-10 hover:text-red-300 cursor-pointer">ABOUT</h1>
+                                <div class="absolute bottom-2 right-1"><i
+                                        class="fa-solid fa-arrow-right text-2xl hover:text-red-300 cursor-pointer"></i></div>
+                                <div class="w-full float-left absolute bottom-0"
+                                    style="border: 1px solid black; height: 0;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mb-4">
+                        <div class="w-w605 h-h250 float-left mr-8">
+                            <img
+                                src="https://s3-alpha-sig.figma.com/img/511b/7769/8fdab0973cf6b8459ad38d0209e94c15?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XautUl~0hdnhZ-MskUNdH3N65gfn9UzLMFFH-~9mXt2HJQn4FPb6xpuQtvAoGpJWF4H6jRoXroYNWgeDnImEypD6wpPWcOOfVD0t1T0w7rm1Mx-pOLKPT6FYTYb-rcYrvt49RW7-btMLk0FDM-xo0tb94rBcMyZMLOgfYCiKmRrP6mbVBRCWHxd7Y64G2KSmQnd2t0XEw3rL-oW3FvBr5ooBeeBeJBK26FlPwpnmUTkOjAdnhHKUNpYvXEJR80ACoGWtojvBHSp06xNxJ01iRj-fTMLQckoR6Ei0VyN23~ozKZTyTnaz~lSePJH9tMxLyCrXc~9mLh1xVEG-n7gUJg__"
+                                alt="img"
+                                class="w-full h-full">
+                        </div>
+                        <div class="relative w-w640 h-h250 mr-16">
+                            <div>
+                                <h1
+                                    class="font-bold text-2xl mb-2 hover:text-red-300 cursor-pointer">WHY
+                                    IS A TV
+                                    CONSOLE A MUST IN EVERY HOUSE</h1>
+                                <h3>People do a lot of research to make sure
+                                    they purchase the ideal
+                                    televisoin. And like the rest of us, you
+                                    want to keep that gorgeous flat srceen in
+                                    your living or bedroom on a table or
+                                    stand</h3>
+                            </div>
+                            <div>
+                                <h1
+                                    class="absolute font-bold bottom-3 right-10 hover:text-red-300 cursor-pointer">ABOUT</h1>
+                                <div class="absolute bottom-2 right-1"><i
+                                        class="fa-solid fa-arrow-right text-2xl hover:text-red-300 cursor-pointer"></i></div>
+                                <div class="w-full float-left absolute bottom-0"
+                                    style="border: 1px solid black; height: 0;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-bg1 h-h270">
+                    <div class="flex justify-center pt-28">
+                        <div class="mx-3">
+                            <i class="fa-solid fa-trophy text-7xl"></i>
+                        </div>
+                        <div><h1 class="text-2xl font-bold">High
+                                Quality</h1>
+                            <h3 class="mt-3 text-gray-500">crafted from top
+                                materials</h3></div>
+                        <div class="mx-3 ">
+                            <i
+                                class="fa-regular fa-circle-check text-7xl ml-8"></i>
+                        </div>
+                        <div><h1
+                                class="text-2xl font-bold">Warranty
+                                Protection</h1>
+                            <h3 class="mt-3 text-gray-500">Over 2
+                                years</h3></div>
+                        <div class="mx-3">
+                            <i class="fa-solid fa-ship text-7xl ml-8"></i>
+                        </div>
+                        <div><h1 class="text-2xl font-bold">Free
+                                Shipping</h1>
+                            <h3 class="mt-3 text-gray-500">Order over 150
+                                $</h3></div>
+                        <div class="mx-3">
+                            <i
+                                class="fa-solid fa-square-phone-flip text-7xl ml-8"></i>
+                        </div>
+                        <div><h1 class="text-2xl font-bold">24 / 7
+                                Support</h1>
+                            <h3 class="mt-3 text-gray-500">Dedicated
+                                support</h3></div>
+                    </div>
+                </div>
+            </main> <hr>
+            <footer class="p-12 flex relative pb-5">
+                <div class="mr-20">
+                    <div class="pb-10"><img src="./img/logo.png" alt></div>
+                    <h3 class="text-gray-400">400 University Drive Suite 200
+                        Coral Gables,<br>
+                        FL 33134 USA</h3>
+                </div>
+                <div class="block mx-16">
+                    <div><h3
+                            class="font-bold text-gray-500 cursor-pointer">Link</h3>
+                        <h3
+                            class="font-bold my-3 hover:text-red-400 cursor-pointer">Home</h3>
+                        <h3
+                            class="font-bold my-3 hover:text-red-400 cursor-pointer">About</h3>
+                        <h3
+                            class="font-bold my-3 hover:text-red-400 cursor-pointer">Contact</h3></div>
+                </div>
+                <div class="mx-16">
+                    <div><h3
+                            class="font-bold text-gray-500 cursor-pointer">Help</h3>
+                        <h3
+                            class="font-bold my-3 hover:text-red-400 cursor-pointer">Payment
+                            Options</h3>
+                        <h3
+                            class="font-bold my-3 hover:text-red-400 cursor-pointer">Returns</h3>
+                        <h3
+                            class="font-bold my-3 hover:text-red-400 cursor-pointer">Privacy
+                            Polices</h3></div>
+                </div>
+                <div class="mx-16">
+                    <div><h3
+                            class="font-bold text-gray-500 cursor-pointer">Newsletter</h3>
+                        <input class="btn btn-outline-dark text-left my-3"
+                            type="search"
+                            placeholder="Enter Your Email Address"> <button
+                            class="btn btn-dark">SUBSRICE</button></div>
+                </div>
+                <div class="w-full absolute bottom-8 left-0"
+                    style="border: 1px solid gray; height: 0;"></div>
+                <div class="absolute left-2 font-semibold bottom-0">2023 furino.
+                    All rights reverved</div>
+            </footer>
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

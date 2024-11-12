@@ -1,20 +1,3 @@
-// const product = [
-//   {
-//     id: 1,
-//     name: "Iphone 13",
-//     price: 1111,
-//   },
-//   {
-//     id: 2,
-//     name: "Iphone 14",
-//     price: 2222,
-//   },
-//   {
-//     id: 3,
-//     name: "Iphone 15",
-//     price: 3333,
-//   },
-// ];
 function proAll(product) {
   return `
   <tr>
@@ -22,42 +5,17 @@ function proAll(product) {
               <td>${product.name}</td>
               <td>${product.price} VND</td>
               <td>
-                <button class="btn btn-danger">Delete</button>
+                <button onClick=deleteData(${product.id}) class="btn btn-danger">Delete</button>
               </td>
             </tr>
   `;
 }
-// document.getElementById("list").innerHTML = `
-//             <table class="table">
-//                 <thead>
-//                   <tr>
-//                     <th scope="col">ID</th>
-//                     <th scope="col">Name</th>
-//                     <th scope="col">Price</th>
-//                     <th scope="col">Action</th>
-//                   </tr>
-//                 </thead>
-//                 <tbody>
-//                   ${product.map(proAll).join("")}
-//                 </tbody>
-//               </table>
-// `;
-// Map
-// const numberList = [1, 2, 3];
-// function doublekILL(item) {
-//   return (item = 3);
-// }
-// const newListNumber = numberList.map(doublekILL);
-// document.write(newListNumber);
 
-function getFetch(){
-  fetch("http://localhost:3000/products")
-  .then((res) => {
-    return res.json();
-  })
-  .then((data) => {
-    document.getElementById('list').innerHTML = `
-    <table class="table">
+async function getProductAsyneFetch() {
+  const res = await fetch("http://localhost:3000/products2");
+  const data = await res.json();
+  document.getElementById("list").innerHTML = `
+  <table class="table">
         <thead>
           <tr>
             <th scope="col">ID</th>
@@ -70,30 +28,28 @@ function getFetch(){
           ${data.map(proAll).join("")}
         </tbody>
       </table>
-    `
-  })
-  .catch();
+  `;
 }
-getFetch();
+getProductAsyneFetch();
 
-// function getAll(pro){
-//   return `
-//   <tr>
-//               <th scope="row">${pro.id}</th>
-//               <td>${pro.name}</td>
-//               <td>${pro.price} VND</td>
-//               <td>
-//                 <button class="btn btn-danger">Delete</button>
-//               </td>
-//             </tr>`
-// };
+// Delete produts
+async function deleteData(id) {
+  try {
+    if (confirm("Delete")) {
+      const res = await fetch(`http://localhost:3000/products/${id}`, {
+        method: "DELETE", // Phương thức xóa
+      });
+    }
+  } catch (error) {
+    console.error(error);
+  }
+}
 
-// function getRenFetch(){
-//   axios
-//     .get("http://localhost:3000/products")
-//     .then((res) => {
-//       const products = res.datas;
-//       document.getElementById("list2").innerHTML = `
+
+// async function showProductList() {
+//   const res = await axios.get("http://localhost:3000/products2");
+//   const products = res.data;
+//   document.getElementById("list2").innerHTML = `
 //       <table class="table">
 //         <thead>
 //           <tr>
@@ -104,11 +60,21 @@ getFetch();
 //           </tr>
 //         </thead>
 //         <tbody>
-//           ${products.map(getAll).join("")}
+//         ${products.map(proAll).join("")}
 //         </tbody>
 //       </table>
-// `;
-//     })
-//     .catch();
+//        `;
 // }
-// getRenFetch();
+
+// showProductList();
+
+// async function deleteProduct(id) {
+//   if (confirm("Di choi ko")) {
+//     try {
+//       await axios.delete(`http://localhost:3000/products2/${id}`);
+//     } catch (error) {
+//       console.log(error);
+//     }
+//   }
+// }
+
