@@ -1,0 +1,39 @@
+{
+   "products" : [
+    {
+      "id": 1,
+      "name": "Iphone 13",
+      "price": 1111
+    },
+    {
+      "id": 2,
+      "name": "Iphone 14",
+      "price": 2222
+    },
+    {
+      "id": 3,
+      "name": "Iphone 15",
+      "price": 3333
+    }
+  ],
+  "products2" : [
+    {
+      "id": 1,
+      "name": "Laptop Asus",
+      "price": 1111
+    },
+    {
+      "id": 2,
+      "name": "Laptop HP",
+      "price": 2222
+    },
+    {
+      "id": 3,
+      "name": "Laptop Dell",
+      "price": 3333
+    }
+  ]
+}
+
+
+
