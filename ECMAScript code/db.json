@@ -12,7 +12,8 @@
     },
     {
       "name": "Macbook",
-      "price": "1123",
+      "price": "11112222",
+      "category": "1",
       "id": 3
     }
   ],
