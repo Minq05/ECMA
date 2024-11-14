@@ -1,31 +1,41 @@
+const productId = location.search.split("=")[1];
 
-function handleSubmit(event) {
-    // Ngăn chặn trang tải lại
-    event.preventDefault();
-    const productName = document.getElementById("name").value;
-    const productPrice = document.getElementById("price").value;
-    const productSelect = document.getElementById("select").value;
-    console.log("productName", productName);
+async function getProductDetail() {
+  if (!productId) return;
+  try {
+    
+    const res = await axios.get(`http://localhost:3000/products/${productId}`);
 
-    if(productName == "" || productPrice == ""){
-        alert("Name or price blank !");
-        location.href = "add.html";
-      }else{
-        try{
-            axios.post("http://localhost:3000/products", {
-                name: productName,
-                price: productPrice,
-                category: productSelect
-              });
-              location.href = "html.html";
-              alert("Thanh cong !")
-         }catch(error){
-            console.error(error);   
-         }
-      }
-     
+    document.getElementById("name").value = res.data.name;
+    document.getElementById("price").value = res.data.price;
+  } catch (error) {
+    alert("error");
   }
+}
+getProductDetail();
 
+async function handleSubmit(event) {
+  event.preventDefault();
+
+  const productName = document.getElementById("name").value;
+  const productPrice = document.getElementById("price").value;
+  const data = {
+    name: productName,
+    price: Number(productPrice),
+  };
+  try {
+    if (productId) {
+      await axios.put(`http://localhost:3000/products/${productId}`, data);
+    } else {
+      await axios.post("http://localhost:3000/products", data);
+    }
+
+    location.href = "html.html";
+    alert("them thanh cong");
+  } catch (error) {
+    alert("error");
+  }
+}
 
 
   

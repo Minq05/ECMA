@@ -6,6 +6,8 @@ function proAll(product) {
               <td>${product.price} VND</td>
               <td>
                 <button onClick=deleteData(${product.id}) class="btn btn-danger">Delete</button>
+                <a href = "/add.html?id=${product.id}">
+                <button class="btn btn-primary">Edit</button></a>
               </td>
             </tr>
   `;
