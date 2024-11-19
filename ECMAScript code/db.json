@@ -1,21 +1,5 @@
 {
-  "products": [
-    {
-      "id": 1,
-      "name": "Laptop Asus",
-      "price": 1111
-    },
-    {
-      "id": 2,
-      "name": "Laptop Asus",
-      "price": 1111
-    },
-    {
-      "name": "Iphone 13 promax",
-      "price": 112233,
-      "id": 4
-    }
-  ],
+  "products": [],
   "products2": [
     {
       "id": 1,
