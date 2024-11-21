@@ -1,17 +1,22 @@
 {
-  "name": "ecmareact",
+  "name": "fall24-ecma-react",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "server": "json-server db.json",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.7.7",
+    "json-server": "^0.17.4",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-hot-toast": "^2.4.1",
+    "react-router-dom": "^6.28.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
