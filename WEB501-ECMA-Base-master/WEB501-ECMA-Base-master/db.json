@@ -1,0 +1,33 @@
+{
+  "products": [
+    {
+      "name": "Iphone 14 promaxx",
+      "image": "https://images.unsplash.com/photo-1719937206220-f7c76cc23d78?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8",
+      "price": "112123123213",
+      "category": "DELL",
+      "id": 3
+    }
+  ],
+  "users": [
+    {
+      "email": "hoangquan2005@gmail.com",
+      "password": "$2a$10$4BgkuDgWlSYI36h3pq6tEe2vDQ7KJ8CR556FAS2jpivxrQn7RRC7a",
+      "id": 1
+    },
+    {
+      "email": "hoangquan22022005@gmail.com",
+      "password": "$2a$10$Ya2L9mEqcVwP7o4y3AO3WeGLLPZyKXB46iIax4DTJS7EoeCUIqyq6",
+      "id": 2
+    },
+    {
+      "email": "minhhoa205@gmail.com",
+      "password": "$2a$10$Bno9DS1CB5qQmuiBlaaXH.7yRpNHAaFNgIO5pACy9nA.gwIAAY/SK",
+      "id": 3
+    },
+    {
+      "email": "ronaldo07@gmail.com",
+      "password": "$2a$10$AaTgtpAriUK6xarBPmlVRuiO4PyZMr/aaANPclHgIivMSjYx4rI6e",
+      "id": 4
+    }
+  ]
+}

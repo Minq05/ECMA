@@ -1,0 +1,23 @@
+{
+  "products": [
+    {
+      "name": "Iphone 14 promax",
+      "image": "https://plus.unsplash.com/premium_photo-1681396658834-b56190480934?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aXBob25lfGVufDB8fDB8fHww",
+      "price": "213123",
+      "id": 1
+    },
+    {
+      "name": "Iphone 14 promax",
+      "image": "https://plus.unsplash.com/premium_photo-1681396658834-b56190480934?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aXBob25lfGVufDB8fDB8fHww",
+      "price": "213123",
+      "id": 2
+    }
+  ],
+  "users": [
+    {
+      "email": "hoangquan2005@gmail.com",
+      "password": "$2a$10$oU1.HDulU8TiLboHw22UoexvTvsakCcR3b6TLBX/5BBh5ABXthYHe",
+      "id": 1
+    }
+  ]
+}

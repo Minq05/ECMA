@@ -1,3 +1,21 @@
 {
-  "products": []
+  "products": [
+    {
+      "name": "laptop",
+      "price": "111",
+      "id": 1
+    },
+    {
+      "name": "Hoàng Minh Quânnn",
+      "price": "1123",
+      "id": 2
+    }
+  ],
+  "users": [
+    {
+      "email": "hoangquan2005@gmail.com",
+      "password": "$2a$10$LDIw.pKF3nmgqLh8dUlsGu6qqivG4NaLsFH.EQiDE3KTToh2tVGVq",
+      "id": 1
+    }
+  ]
 }

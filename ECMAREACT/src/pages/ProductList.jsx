@@ -6,29 +6,28 @@ function ProductList() {
   const [products, setProducts] = useState([]);
 
   async function getProductList() {
-    try {
-      const res = await axios.get("http://localhost:3000/products");
-      setProducts(res.data);
-    } catch (error) {
-      console.log(error);
-    }
+    const res = await axios.get("http://localhost:3000/products");
+    setProducts(res.data);
   }
+
+  useEffect(() => {
+    getProductList();
+  }, []);
 
   async function deleteProduct(id) {
     if (confirm("Di choi ko")) {
       try {
         await axios.delete(`http://localhost:3000/products/${id}`);
         toast.success("Xoa thanh cong");
+        // cap nhat danh sach
+        getProductList();
       } catch (error) {
         console.log(error);
-        toast.error("Xoa khong thanh cong !")
+        toast.error("Error");
       }
     }
   }
 
-  useEffect(() => {
-    getProductList();
-  }, []);
   return (
     <div className="container">
       <h1 className="text-center my-2">ProductList</h1>
@@ -42,20 +41,23 @@ function ProductList() {
           </tr>
         </thead>
         <tbody>
-          {products.map((product) => {
+          {products.map((product, index) => {
             return (
-              <tr key={product.id}>
+              <tr key={index}>
                 <th scope="row">{product.id}</th>
                 <td>{product.name}</td>
                 <td>{product.price} USD</td>
                 <td>
                   <button
-                    className="btn btn-danger"
                     onClick={() => deleteProduct(product.id)}
+                    className="btn btn-danger"
                   >
                     Delete
                   </button>
-                  <button className="btn btn-info">Edit</button>
+                  {/* /product/edit/:id */}
+                  <a href={`/product/edit/${product.id}`}>
+                    <button className="btn btn-info">Edit</button>
+                  </a>
                 </td>
               </tr>
             );

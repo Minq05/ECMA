@@ -1,0 +1,20 @@
+{
+  "products": [
+    {
+      "name": " Minh Quân",
+      "price": "01",
+      "id": 1
+    },
+    {
+      "name": " Minh Quân",
+      "price": "1110",
+      "id": 2
+    },
+    {
+      "name": " Minh Quân",
+      "price": "111066",
+      "id": 3
+    }
+  ],
+  "users": []
+}

@@ -1,0 +1,12 @@
+{
+  "products": [
+    {
+      "title": "Iphone 13",
+      "image": "https://images.unsplash.com/photo-1719937206220-f7c76cc23d78?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8",
+      "price": "2",
+      "brand": "DELL",
+      "ishot": true,
+      "id": 1
+    }
+  ]
+}

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Furniro</title>
+        <link rel="short-cut icon"
+            href="https://th.bing.com/th/id/OIP.wbh6QMZaMUDSDm2lWcmABAHaGB?rs=1&pid=ImgDetMain">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="./css/tailwind.css">
+        <link rel="stylesheet" href="./build/tailwind.css">
+        <link rel="stylesheet" href="css.css">
+
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header{
+            justify-content: space-between;
+            align-items: center;
+        }
+        #layout{
+            width: 1440px;
+            margin: auto;
+        }
+    </style>
+    </head>
+    <body>
+        <div id="layout" class="pb-4">
+            <header class="flex p-2 bg-inherit shadow-black text-black"
+                id="navbar">
+                <div class="flex items-center">
+                    <img class="h-10 cursor-pointer" src="./img/logo.png"
+                        alt="Furniro Logo">
+                </div>
+                <nav>
+                    <ul class="list-none flex m-0 p-0">
+                        <li class="mx-6"><a class=" hover:text-red-300 text-2xl"
+                                href="./Home.html">Home</a></li>
+                        <li class="mx-6"><a class=" hover:text-red-300 text-2xl"
+                                href="./Detail.html">Shop</a></li>
+                        <li class="mx-6"><a class=" hover:text-red-300 text-2xl"
+                                href="./Cart.html">Cart</a></li>
+                        <li class="mx-6"><a class=" hover:text-red-300 text-2xl"
+                                href="./CheckOut.html">CheckOut</a></li>
+                    </ul>
+                </nav>
+                <div class="mr-2">
+                    <a href="#" class="mx-3 hover:text-red-300"><i
+                            class="fas fa-user"></i></a>
+                    <a href="#" class="mx-3 hover:text-red-300"><i
+                            class="fas fa-search"></i></a>
+                    <a href="#" class="mx-3 hover:text-red-300"><i
+                            class="fas fa-heart"></i></a>
+                    <a href="#" class="mx-3 hover:text-red-300"><i
+                            class="fas fa-shopping-cart"></i></a>
+                </div>
+            </header>
+            <main class="mt-mt60">
+                <div>
+                    <img
+                        src="./img/banner.png"
+                        alt width="100%" class="w-full cursor-pointer">
+                </div>
+                <div class="container mx-auto my-10">
+                    <div class="flex flex-col lg:flex-row gap-8">
+                        <!-- Billing Details -->
+                        <div class="bg-white rounded-lg p-6 flex-1">
+                            <h2 class="text-4xl font-bold pb-4">Billing
+                                Details</h2>
+                            <form class="mt-6 space-y-4">
+                                <div class="flex gap-4">
+                                    <div class="flex-1 ">
+                                        <label for="first-name"
+                                            class="block text-sm font-medium text-gray-600">First
+                                            Name</label>
+                                        <input type="text" id="first-name"
+                                            class="w-full border border-gray-300 rounded-md h-14 p-2 ">
+                                    </div>
+                                    <div class="flex-1">
+                                        <label for="last-name"
+                                            class="block text-sm font-medium text-gray-600">Last
+                                            Name</label>
+                                        <input type="text" id="last-name"
+                                            class="w-full border border-gray-300 rounded-md h-14 p-2 ">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="company-name"
+                                        class="block text-sm font-medium text-gray-600">Company
+                                        Name (Optional)</label>
+                                    <input type="text" id="company-name"
+                                        class="w-full border border-gray-300 rounded-md h-14 p-2 ">
+                                </div>
+                                <div>
+                                    <label for="country"
+                                        class="block text-sm font-medium text-gray-600">Country
+                                        / Region</label>
+                                    <select id="country"
+                                        class="w-full border border-gray-300 rounded-md h-14 p-2 ">
+                                        <option>Sri Lanka</option>
+                                        <option>Vietnam</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="street-address"
+                                        class="block text-sm font-medium text-gray-600">Street
+                                        Address</label>
+                                    <input type="text" id="street-address"
+                                        class="w-full border border-gray-300 rounded-md h-14 p-2 ">
+                                </div>
+                                <div class="flex gap-4">
+                                    <div class="flex-1">
+                                        <label for="city"
+                                            class="block text-sm font-medium text-gray-600">Town
+                                            / City</label>
+                                        <input type="text" id="city"
+                                            class="w-full border border-gray-300 rounded-md p-2 h-14 ">
+                                    </div>
+                                    <div class="flex-1">
+                                        <label for="province"
+                                            class="block text-sm font-medium text-gray-600">Province</label>
+                                        <select id="province"
+                                            class="w-full border border-gray-300 rounded-md p-2 h-14 ">
+                                            <option>Western Province</option>
+                                            <option>Central Province</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <div class="flex-1">
+                                        <label for="zip-code"
+                                            class="block text-sm font-medium text-gray-600">ZIP
+                                            Code</label>
+                                        <input type="text" id="zip-code"
+                                            class="w-full border border-gray-300 h-14 rounded-md p-2 ">
+                                    </div>
+                                    <div class="flex-1">
+                                        <label for="phone"
+                                            class="block text-sm font-medium text-gray-600">Phone</label>
+                                        <input type="text" id="phone"
+                                            class="w-full border h-14 border-gray-300 rounded-md p-2 ">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="email"
+                                        class="block text-sm font-medium text-gray-600">Email
+                                        Address</label>
+                                    <input type="email" id="email"
+                                        class="w-full border h-14 border-gray-300 rounded-md p-2 ">
+                                </div>
+                                <div>
+                                    <label for="additional-info"
+                                        class="block text-sm font-medium text-gray-600">Additional
+                                        Information</label>
+                                    <textarea id="additional-info" rows="4"
+                                        class="w-full border h-14 border-gray-300 rounded-md p-2 "></textarea>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Order Summary -->
+                        <div
+                            class="bg-white rounded-lg p-6 w-full lg:w-1/3 h-96">
+                            <h2
+                                class="text-2xl font-bold">Product</h2>
+                            <div class="flex justify-between items-center py-2 text-gray-600">
+                                <p>Asgaard sofa x 1</p>
+                                <p
+                                    class="text-right text-gray-600">25.000.000đ</p>
+                            </div>
+                            <div
+                                class="flex justify-between items-center py-2 text-gray-600">
+                                <span>Subtotal</span>
+                                <span>25.000.000đ</span>
+                            </div>
+                            <div
+                                class="flex justify-between border-b items-center py-4 text-gray-900 font-bold">
+                                <span>Total</span>
+                                <span>250.000.000đ</span>
+                            </div>
+                            <div class="py-2">
+                                <label class="block">
+                                    <input type="radio" name="payment"
+                                        class="mr-2 focus:ring-yellow-400"
+                                        checked> Direct Bank Transfer
+                                </label>
+                                <p class="text-sm text-gray-500 mt-2">
+                                    Make your payment directly into our bank
+                                    account. Please use your Order ID as the
+                                    payment reference. Your order will not be
+                                    shipped until the funds have cleared in our
+                                    account.
+                                </p>
+                            </div>
+                            <div class="py-2 ">
+                                <label class="block">
+                                    <input type="radio" name="payment"
+                                        class="mr-2 focus:ring-yellow-400"> Cash
+                                    on Delivery
+                                </label>
+                            </div>
+                            <p class="text-sm text-gray-500">
+                                Your personal data will be used to support your
+                                experience throughout this website, to manage
+                                access to your account, and for other purposes
+                                described in our <a href="#"
+                                    class="text-yellow-500 hover:underline">privacy
+                                    policy</a>.
+                            </p>
+                            <button
+                                class="w-full mt-4 py-3 rounded-md shadow-md btn btn-outline-dark">
+                                Place Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-bg1 h-h270">
+                    <div class="flex justify-center pt-28">
+                        <div class="mx-3">
+                            <i class="fa-solid fa-trophy text-7xl"></i>
+                        </div>
+                        <div><h1 class="text-2xl font-bold">High
+                                Quality</h1>
+                            <h3 class="mt-3 text-gray-500">crafted from top
+                                materials</h3></div>
+                        <div class="mx-3 ">
+                            <i
+                                class="fa-regular fa-circle-check text-7xl ml-8"></i>
+                        </div>
+                        <div><h1
+                                class="text-2xl font-bold">Warranty
+                                Protection</h1>
+                            <h3 class="mt-3 text-gray-500">Over 2
+                                years</h3></div>
+                        <div class="mx-3">
+                            <i class="fa-solid fa-ship text-7xl ml-8"></i>
+                        </div>
+                        <div><h1 class="text-2xl font-bold">Free
+                                Shipping</h1>
+                            <h3 class="mt-3 text-gray-500">Order over 150
+                                $</h3></div>
+                        <div class="mx-3">
+                            <i
+                                class="fa-solid fa-square-phone-flip text-7xl ml-8"></i>
+                        </div>
+                        <div><h1 class="text-2xl font-bold">24 / 7
+                                Support</h1>
+                            <h3 class="mt-3 text-gray-500">Dedicated
+                                support</h3></div>
+                    </div>
+                </div>
+            </main> <hr>
+            <footer class="p-12 flex relative pb-5">
+                <div class="mr-20">
+                    <div class="pb-10"><img src="./img/logo.png" alt></div>
+                    <h3 class="text-gray-400">400 University Drive Suite 200
+                        Coral Gables,<br>
+                        FL 33134 USA</h3>
+                </div>
+                <div class="block mx-16">
+                    <div><h3
+                            class="font-bold text-gray-500 cursor-pointer">Link</h3>
+                        <h3
+                            class="font-bold my-3 hover:text-red-400 cursor-pointer">Home</h3>
+                        <h3
+                            class="font-bold my-3 hover:text-red-400 cursor-pointer">About</h3>
+                        <h3
+                            class="font-bold my-3 hover:text-red-400 cursor-pointer">Contact</h3></div>
+                </div>
+                <div class="mx-16">
+                    <div><h3
+                            class="font-bold text-gray-500 cursor-pointer">Help</h3>
+                        <h3
+                            class="font-bold my-3 hover:text-red-400 cursor-pointer">Payment
+                            Options</h3>
+                        <h3
+                            class="font-bold my-3 hover:text-red-400 cursor-pointer">Returns</h3>
+                        <h3
+                            class="font-bold my-3 hover:text-red-400 cursor-pointer">Privacy
+                            Polices</h3></div>
+                </div>
+                <div class="mx-16">
+                    <div><h3
+                            class="font-bold text-gray-500 cursor-pointer">Newsletter</h3>
+                        <input class="btn btn-outline-dark text-left my-3"
+                            type="search"
+                            placeholder="Enter Your Email Address"> <button
+                            class="btn btn-dark">SUBSRICE</button></div>
+                </div>
+                <div class="w-full absolute bottom-8 left-0"
+                    style="border: 1px solid gray; height: 0;"></div>
+                <div class="absolute left-2 font-semibold bottom-0">2023 furino.
+                    All rights reverved</div>
+            </footer>
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

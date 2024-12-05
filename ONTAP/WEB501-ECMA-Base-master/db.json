@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "name": " Minh Quân 2",
+      "image": "https://plus.unsplash.com/premium_photo-1681396658834-b56190480934?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aXBob25lfGVufDB8fDB8fHww",
+      "price": "111",
+      "category": false,
+      "id": 4
+    },
+    {
+      "name": " Minh Quân",
+      "image": "https://plus.unsplash.com/premium_photo-1681396658834-b56190480934?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aXBob25lfGVufDB8fDB8fHww",
+      "price": "111066",
+      "category": true,
+      "id": 5
+    }
+  ],
+  "users": [
+    {
+      "email": "hoangquan2005@gmail.com",
+      "password": "$2a$10$j1DG7SXOnjoAxhdDIILw/eTon2BMQw2UGD3F106hsluozJvA8oeBC",
+      "id": 1
+    },
+    {
+      "email": "hoanquan2202@gmail.com",
+      "password": "$2a$10$vd2b2brdfHRRVzgspXcNhOwzQoCmKdqCKZaTTsWWTPOX6kSCm5X4.",
+      "id": 2
+    },
+    {
+      "email": "minhhoa205@gmail.com",
+      "password": "$2a$10$Q5E/eBiqCGd1fg9HIHdsceoUvMvtFzzLctZ8Vw88xnxt6emFb5KpO",
+      "id": 3
+    },
+    {
+      "email": "hoangquan22022005@gmail.com",
+      "password": "$2a$10$MYWUbk1w2rZZXTN3Ejy3f.t6PXLLfBPyr6CKFQX.U2kJVcfGKBbYq",
+      "id": 4
+    }
+  ]
+}
